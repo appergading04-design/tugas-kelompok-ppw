@@ -1,0 +1,112 @@
+/* Pengaturan Umum & Font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 30px;
+    color: #000;
+}
+
+/* Bagian Utama (Container) */
+.bagian {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Bagian Judul (Judul Utama & Area Share) */
+.bagianjudul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Judul "W3Schools How To" */
+.bagianjudul > span {
+    font-size: 42px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+}
+
+/* Area Tombol Share & Ikon */
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon > span {
+    font-weight: bold;
+    font-size: 14px;
+    color: #222524; /* Warna khas hijau W3Schools */
+    margin-right: 5px;
+    letter-spacing: 0.5px;
+}
+
+/* Styling untuk Kotak Ikon Media Sosial (gambar2 s/d gambar5) */
+.icon img {
+    width: 38px;
+    height: 38px;
+    padding: 8px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    object-fit: contain;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.2s;
+}
+
+.icon img:hover {
+    background-color: #ddd;
+}
+
+.penomoran{
+    margin: 0 auto;
+}
+/* Bagian Navigasi Angka / Pagination (div kedua setelah bagianjudul) */
+.bagianjudul + div {
+    display: flex;
+    justify-content: center;
+    gap: 2px; /* Jarak antar kotak angka/panah */
+    margin-bottom: 15px;
+}
+
+/* Kotak untuk Setiap Angka dan Panah */
+.bagianjudul + div span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s;
+}
+
+/* Angka pertama aktif (Angka 1 berwarna hijau dengan teks putih) */
+.bagianjudul + div span:nth-child(2) {
+    background-color: #04aa6d;
+    color: #ffffff;
+}
+
+/* Efek Hover untuk angka/panah lain (selain yang aktif) */
+.bagianjudul + div span:not(:nth-child(2)):hover {
+    background-color: #f1f1f1;
+}
+
+/* Styling khusus untuk ikon panah kiri & kanan */
+.bagianjudul + div span:first-child,
+.bagianjudul + div span:last-child {
+    color: #888; /* Warna abu-abu redup seperti gambar */
+    font-size: 14px;
+}
+
+/* Kalimat Bawah (Code snippets...) */
+.kalimat1 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 2% 0 2% 0;
+}
